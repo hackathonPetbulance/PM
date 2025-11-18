@@ -2,54 +2,56 @@
 기획 부분 레포지토리
 
 # 🚑 펫뷸런스 (Petbulance)
-> **서울시 기반 특수동물 AI 원스톱 응급 케어 솔루션** > **"특수동물 응급 상황, AI Vision 분석부터 병원 매칭, 응급처치 안내까지 한 번에"**
+> **서울시 기반 특수동물 AI 원스톱 응급 케어 솔루션**
+>
+> **"특수동물 응급 상황, AI Vision 분석부터 병원 매칭, 응급처치 안내까지 한 번에"**
 
 ![Project Status](https://img.shields.io/badge/Project-SeSAC_Hackathon_2025-green) ![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android) ![Backend](https://img.shields.io/badge/Backend-SpringBoot-6DB33F?logo=springboot) ![AI](https://img.shields.io/badge/AI-Gemini_API-8E75B2?logo=google)
 
 ## 📖 프로젝트 소개 (Introduction)
-[cite_start]**펫뷸런스(Petbulance)**는 'Pet(반려동물)'과 'Ambulance(구급차)'의 합성어로, 특수동물(파충류, 조류, 소형 포유류 등)의 응급 상황에서 **골든타임**을 확보하기 위한 AI 솔루션입니다. [cite: 6]
+**펫뷸런스(Petbulance)**는 'Pet(반려동물)'과 'Ambulance(구급차)'의 합성어로, 특수동물(파충류, 조류, 소형 포유류 등)의 응급 상황에서 **골든타임**을 확보하기 위한 AI 솔루션입니다.
 
-급증하는 특수동물 양육 인구에 비해 턱없이 부족한 의료 인프라와 파편화된 정보로 인해 발생하는 **'응급 의료 사각지대'** 문제를 해결합니다. [cite_start]보호자가 당황스러운 응급 상황에서 사진 한 장만으로 **상태 분석, 병원 매칭, 응급처치 가이드**를 원스톱으로 제공받을 수 있습니다. [cite: 7, 8, 38]
+급증하는 특수동물 양육 인구에 비해 턱없이 부족한 의료 인프라와 파편화된 정보로 인해 발생하는 **'응급 의료 사각지대'** 문제를 해결합니다. 보호자가 당황스러운 응급 상황에서 사진 한 장만으로 **상태 분석, 병원 매칭, 응급처치 가이드**를 원스톱으로 제공받을 수 있습니다.
 
 ## 💡 핵심 기능 (Key Features)
 
 ### 1. AI Vision 응급도 분석 (인식)
-* [cite_start]**기능:** 사용자가 촬영한 환부 사진을 AI(Gemini Vision)가 실시간으로 분석합니다. [cite: 40]
-* [cite_start]**결과:** 단순 질환명 추론을 넘어, **'응급도(상/중/하)'**를 판별하고 시각화된 분석 결과를 제공합니다. [cite: 41]
+* **기능:** 사용자가 촬영한 환부 사진을 AI(Gemini Vision)가 실시간으로 분석합니다.
+* **결과:** 단순 질환명 추론을 넘어, **'응급도(상/중/하)'**를 판별하고 시각화된 분석 결과를 제공합니다.
 
 ### 2. AI 병원 매칭 RAG 시스템 (매칭/실행)
-* [cite_start]**기능:** 분석된 응급도와 사용자의 실시간 위치(GPS), 현재 시간(야간/휴일 등)을 고려하여 최적의 병원을 추천합니다. [cite: 42]
+* **기능:** 분석된 응급도와 사용자의 실시간 위치(GPS), 현재 시간(야간/휴일 등)을 고려하여 최적의 병원을 추천합니다.
 * **차별점:**
-    * [cite_start]**자체 검증 DB:** 서울시 내 102개소 특수동물 병원에 대해 직접 전화 검증(전문의 상주 여부, 진료 가능 동물 등)을 마친 '신뢰할 수 있는 데이터'만 사용합니다. [cite: 19, 20]
-    * [cite_start]**RAG (Retrieval-Augmented Generation):** 환각 현상(Hallucination)을 최소화하고 정확한 병원 정보만 매칭합니다. [cite: 13]
+    * **자체 검증 DB:** 서울시 내 102개소 특수동물 병원에 대해 직접 전화 검증(전문의 상주 여부, 진료 가능 동물 등)을 마친 '신뢰할 수 있는 데이터'만 사용합니다.
+    * **RAG (Retrieval-Augmented Generation):** 환각 현상(Hallucination)을 최소화하고 정확한 병원 정보만 매칭합니다.
 
 ### 3. AI 응급처치 가이드 (대응)
-* [cite_start]**기능:** 병원 이동 중 보호자가 취해야 할 행동 요령을 안내합니다. [cite: 44]
-* [cite_start]**내용:** 동물 종과 증상에 맞춘 맞춤형 응급처치(체온 유지, 기도 확보 등) 가이드를 생성형 AI가 즉시 제공하여 2차 손상을 방지합니다. [cite: 45]
+* **기능:** 병원 이동 중 보호자가 취해야 할 행동 요령을 안내합니다.
+* **내용:** 동물 종과 증상에 맞춘 맞춤형 응급처치(체온 유지, 기도 확보 등) 가이드를 생성형 AI가 즉시 제공하여 2차 손상을 방지합니다.
 
 ## 🛠 기술 스택 (Tech Stack)
 
 | 영역 | 기술 (Tech) | 설명 |
 | :--- | :--- | :--- |
-| **AI / LLM** | **Gemini API** | [cite_start]Vision (이미지 분석), Pro (자연어 처리), Embedding (벡터화) [cite: 73] |
-| **Front-End** | **Android (Jetpack Compose)** | [cite_start]MVVM 패턴, CameraX(촬영), Naver Map SDK(위치), Ktor [cite: 93] |
-| **Back-End** | **Spring Boot** | [cite_start]RAG 서버 구축, REST API [cite: 93] |
-| **Database** | **MySQL / PostgreSQL** | [cite_start]병원 및 사용자 정형 데이터 관리 [cite: 93] |
-| **Vector DB** | **Pinecone / Chroma** | [cite_start]임베딩된 데이터(증상, 병원정보) 고속 벡터 검색 [cite: 93] |
-| **Data** | **Hybrid Dataset** | [cite_start]서울시 공공데이터 + **팀 자체 전화 검증 DB (Human-in-the-Loop)** [cite: 12, 21] |
+| **AI / LLM** | **Gemini API** | Vision (이미지 분석), Pro (자연어 처리), Embedding (벡터화) |
+| **Front-End** | **Android (Jetpack Compose)** | MVVM 패턴, CameraX(촬영), Naver Map SDK(위치), Ktor |
+| **Back-End** | **Spring Boot** | RAG 서버 구축, REST API |
+| **Database** | **MySQL / PostgreSQL** | 병원 및 사용자 정형 데이터 관리 |
+| **Vector DB** | **Pinecone / Chroma** | 임베딩된 데이터(증상, 병원정보) 고속 벡터 검색 |
+| **Data** | **Hybrid Dataset** | 서울시 공공데이터 + **팀 자체 전화 검증 DB (Human-in-the-Loop)** |
 
 ## 🧩 시스템 아키텍처 (System Architecture)
-1.  [cite_start]**User Input:** 앱을 통해 특수동물 증상 사진 촬영 또는 업로드 [cite: 87]
+1.  **User Input:** 앱을 통해 특수동물 증상 사진 촬영 또는 업로드
 2.  **Processing:**
-    * [cite_start]`Gemini Vision`: 이미지 분석 → 텍스트 메타데이터 추출 (증상, 응급도) [cite: 77, 78]
-    * [cite_start]`Gemini Embedding`: 추출된 데이터 벡터화 [cite: 79]
+    * `Gemini Vision`: 이미지 분석 → 텍스트 메타데이터 추출 (증상, 응급도)
+    * `Gemini Embedding`: 추출된 데이터 벡터화
 3.  **RAG Server:**
-    * [cite_start]Vector DB 검색: 사용자 위치/시간 + 증상과 매칭되는 병원 & 응급처치 매뉴얼 검색 [cite: 81, 82]
+    * Vector DB 검색: 사용자 위치/시간 + 증상과 매칭되는 병원 & 응급처치 매뉴얼 검색
 4.  **Output:**
-    * [cite_start]`Gemini Pro`: 검색된 정보를 바탕으로 자연어 형태의 **[병원 추천 카드]** 및 **[응급처치 가이드]** 생성 후 앱으로 전송 [cite: 84]
+    * `Gemini Pro`: 검색된 정보를 바탕으로 자연어 형태의 **[병원 추천 카드]** 및 **[응급처치 가이드]** 생성 후 앱으로 전송
 
 ## 👨‍👩‍👧‍👦 팀원 소개 (Team Members)
-[cite_start]**2025 새싹 해커톤 펫뷸런스 팀** [cite: 1, 2]
+**2025 새싹 해커톤 펫뷸런스 팀**
 
 | 이름 | 역할 | 담당 업무 |
 | :--- | :--- | :--- |
@@ -61,9 +63,9 @@
 | **함지나** | **Back-End** | AI 모델 연동, RAG 시스템 구축 |
 
 ## 📈 기대 효과 (Expected Impact)
-* [cite_start]**골든타임 확보:** 정보 탐색 및 의사결정 시간을 기존 20분에서 **2분**으로 90% 이상 단축 [cite: 47]
-* [cite_start]**데이터 신뢰성:** 직접 검증(Human-in-the-Loop)한 DB를 통해 '헛걸음' 방지 및 진료 거부 최소화 [cite: 17, 100]
-* [cite_start]**사회적 안전망:** 서울시 특수동물 보호자들의 심리적 불안 해소 및 생명 구조율 상승 [cite: 235]
+* **골든타임 확보:** 정보 탐색 및 의사결정 시간을 기존 20분에서 **2분**으로 90% 이상 단축
+* **데이터 신뢰성:** 직접 검증(Human-in-the-Loop)한 DB를 통해 '헛걸음' 방지 및 진료 거부 최소화
+* **사회적 안전망:** 서울시 특수동물 보호자들의 심리적 불안 해소 및 생명 구조율 상승
 
 ---
 *이 프로젝트는 2025년 새싹 해커톤(SeSAC Hackathon) 출품작입니다.*
