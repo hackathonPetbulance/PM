@@ -6,8 +6,6 @@
 >
 > **"특수동물 응급 상황, AI Vision 분석부터 병원 매칭, 응급처치 안내까지 한 번에"**
 
-![Project Status](https://img.shields.io/badge/Project-SeSAC_Hackathon_2025-green) ![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android) ![Backend](https://img.shields.io/badge/Backend-SpringBoot-6DB33F?logo=springboot) ![AI](https://img.shields.io/badge/AI-Gemini_API-8E75B2?logo=google)
-
 ## 📖 프로젝트 소개 (Introduction)
 **펫뷸런스(Petbulance)**는 'Pet(반려동물)'과 'Ambulance(구급차)'의 합성어로, 특수동물(파충류, 조류, 소형 포유류 등)의 응급 상황에서 **골든타임**을 확보하기 위한 AI 솔루션입니다.
 
