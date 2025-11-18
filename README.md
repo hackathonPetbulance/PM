@@ -57,8 +57,8 @@
 | **진서윤** | **PM** | 서비스 기획, 데이터 검증 프로세스 설계 |
 | **김선민** | **UX/UI Designer** | 앱 디자인 시스템 구축, UI/UX 설계 |
 | **정은재** | **Front-End** | Android 앱 개발 (Jetpack Compose) |
-| **김영욱** | **Back-End** | Spring Boot 서버 개발, API 설계 |
-| **함지나** | **Back-End** | AI 모델 연동, RAG 시스템 구축 |
+| **김영욱** | **Back-End** | Spring Boot 서버 개발, API 설계, AI 모델 연동, RAG 시스템 구축 |
+| **함지나** | **Back-End** | Spring Boot 서버 개발, API 설계, AI 모델 연동, RAG 시스템 구축 |
 
 ## 📈 기대 효과 (Expected Impact)
 * **골든타임 확보:** 정보 탐색 및 의사결정 시간을 기존 20분에서 **2분**으로 90% 이상 단축
